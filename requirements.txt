@@ -1,0 +1,10 @@
+streamlit
+langchain
+openai
+chromadb
+pypdf
+python-docx
+pdf2image
+pytesseract
+pillow
+python-dotenv
