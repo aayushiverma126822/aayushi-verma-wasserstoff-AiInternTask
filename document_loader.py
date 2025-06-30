@@ -1,7 +1,6 @@
 import os
 from langchain.document_loaders import PyPDFLoader, TextLoader, UnstructuredFileLoader
 
-
 def load_documents(uploaded_files):
     documents = []
     for file in uploaded_files:
@@ -10,9 +9,8 @@ def load_documents(uploaded_files):
             loader = PyPDFLoader(file)
         elif file_name.endswith(".txt"):
             loader = TextLoader(file)
-       elif file_name.endswith(".docx"):
-    loader = UnstructuredFileLoader(file)
-
+        elif file_name.endswith(".docx"):
+            loader = UnstructuredFileLoader(file)
         else:
             continue
         documents.extend(loader.load())
