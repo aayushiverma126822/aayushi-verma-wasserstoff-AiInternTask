@@ -10,8 +10,9 @@ def load_documents(uploaded_files):
             loader = PyPDFLoader(file)
         elif file_name.endswith(".txt"):
             loader = TextLoader(file)
-        elif file_name.endswith(".docx"):
-            loader = Docx2txtLoader(file)
+       elif file_name.endswith(".docx"):
+    loader = UnstructuredFileLoader(file)
+
         else:
             continue
         documents.extend(loader.load())
