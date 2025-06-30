@@ -1,10 +1,7 @@
-streamlit
 langchain
 openai
 chromadb
+streamlit
 pypdf
-python-docx
-pdf2image
-pytesseract
-pillow
 python-dotenv
+python-docx
