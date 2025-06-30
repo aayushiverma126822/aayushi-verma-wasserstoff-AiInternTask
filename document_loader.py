@@ -1,5 +1,6 @@
 import os
-from langchain.document_loaders import PyPDFLoader, TextLoader, Docx2txtLoader
+from langchain.document_loaders import PyPDFLoader, TextLoader, UnstructuredFileLoader
+
 
 def load_documents(uploaded_files):
     documents = []
